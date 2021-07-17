@@ -5,15 +5,15 @@ const icon = document.getElementById('theme-icon');
 
 function storeTheme(icon, theme) {
     localStorage.setItem("icon", icon);
-    localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", "css/" + theme);
 } 
 
 document.getElementById('themer').addEventListener('click', function() {
-    storeTheme('fas fa-moon', 'css/light.css');
+    storeTheme('fas fa-moon', 'light.css');
     if(style.getAttribute('href') === 'css/light.css') {
         style.setAttribute('href', 'css/dark.css');
         icon.setAttribute('class', 'far fa-sun');
-        storeTheme('far fa-sun', 'css/dark.css');
+        storeTheme('far fa-sun', 'dark.css');
     } else {
         style.setAttribute('href', 'css/light.css');
         icon.setAttribute('class', 'fas fa-moon');
