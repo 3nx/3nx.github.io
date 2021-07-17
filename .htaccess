@@ -1,0 +1,5 @@
+<ifmodule mod_rewrite.c>
+RewriteCond %{REQUEST_URI} !^/favicon\.ico [NC]
+RewriteCond %{REQUEST_URI} favicon\.ico    [NC]
+RewriteRule (.*) https://pxy.pw/beta/img/favicon.ico [R=301,L]
+</ifmodule>
