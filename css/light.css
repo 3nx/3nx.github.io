@@ -1,0 +1,9 @@
+@import url('base.css');
+
+body {
+    background: #efefef;
+    color: #333;
+}
+a {
+    color: #7f7f7f;
+}

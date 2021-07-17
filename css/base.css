@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-weight: 800;
+    font-size: 1em;
+}
+#themer {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    margin: 0;
+    font-size: 20px;
+}
+#content {
+    position: absolute;
+    width: 25%;
+    height: 75%;
+    top: 5%;
+    left: 5%;
+    animation: fade 1s forwards;
+}
+@keyframes fade {
+    0% {
+        transform: translateY(15px);
+        opacity: 0;
+    } 80% {
+        opacity: 1;
+    } 100% {
+        transform: translateY(0);
+    }
+}
+#content > *{
+    margin: 7px 0 3px 7px;
+}
