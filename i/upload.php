@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ERROR);
-$tokens = array("starbdi"); //Tokens go here
+$ini = parse_ini_file('config.ini');
+$tokens = array($ini['s_token']); //Tokens go here
 $sharexdir = ""; //File directory
 $lengthofstring = 5; //Length of file name
 
